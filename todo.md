@@ -1,0 +1,49 @@
+# Project TODO
+
+- [x] สร้างระบบดีไซน์ Hushwood ด้วยสี deep forest green, off-white, charcoal black และ warm wood brown
+- [x] กำหนด typography แบบ serif display จับคู่กับ clean sans-serif body
+- [x] บังคับรูปทรงทุกองค์ประกอบให้โค้งมนโดยไม่มีมุมแหลม รวมถึงปุ่มแบบ pill การ์ด rounded-3xl และ avatar วงกลม
+- [x] สร้าง global navigation ที่โปร่งใสบนสุดและเปลี่ยนเป็นพื้นทึบเมื่อเลื่อน พร้อม pill active state
+- [x] สร้าง mobile hamburger drawer ที่เข้าถึงได้ด้วยคีย์บอร์ด
+- [x] สร้างหน้าแรก hero เต็มจอด้วยภาพป่า parallax และ cinematic entrance animations ผ่าน Framer Motion
+- [x] สร้างส่วน curated tours, philosophy, metrics, editorial story และ CTA บนหน้าแรกพร้อม staggered scroll reveal
+- [x] สร้างหน้ารวมทัวร์พร้อมตัวกรองและสถานะผลลัพธ์
+- [x] สร้าง tour card ที่มี hover animation และ pill tags exactly สามประเภท: duration, difficulty และ price
+- [x] สร้างหน้ารายละเอียดทัวร์พร้อม immersive image gallery
+- [x] สร้าง tabbed itinerary sections พร้อม animated transitions
+- [x] สร้าง sticky animated booking sidebar บนหน้ารายละเอียดทัวร์
+- [x] สร้าง highlights reel, included/excluded lists และ guide profile card
+- [x] สร้าง booking flow สี่ขั้นตามลำดับ date picker → traveler count → personal info → review & confirm
+- [x] สร้าง animated booking progress indicator และ smooth step transitions ด้วย Framer Motion
+- [x] ตรวจสอบข้อมูลการจองและแสดง success state หลังยืนยัน
+- [x] สร้างหน้าติดต่อพร้อม animated contact form, office information และ social links ในการ์ดโค้งมน
+- [x] บันทึกข้อความติดต่อผ่าน backend พร้อม success/error feedback
+- [x] สร้างหน้า login/sign-up แบบ forest split layout พร้อม OAuth login button และ smooth form-mode transitions
+- [x] เชื่อมต่อการเข้าสู่ระบบด้วย Manus OAuth ที่มีอยู่ใน scaffold
+- [x] เพิ่ม schema ตาราง tours ครบ title, description, price, duration, images, itinerary และ highlights
+- [x] เพิ่ม schema ตาราง bookings ครบ user, tour, date, travelers และ status
+- [x] เพิ่ม schema ตาราง contactMessages สำหรับข้อความติดต่อ
+- [x] สร้าง migration จาก Drizzle schema และนำ SQL ไปใช้กับฐานข้อมูล
+- [x] สร้าง database helpers และ typed tRPC procedures สำหรับ tours, bookings และ contact messages
+- [x] จำกัดการสร้างและดูรายการจองส่วนบุคคลไว้สำหรับผู้ใช้ที่เข้าสู่ระบบ
+- [x] สร้าง admin booking management view ที่แสดง reservation ทั้งหมด
+- [x] รองรับการอัปเดตสถานะราย reservation จากหน้าผู้ดูแล
+- [x] ป้องกัน admin procedures ด้วย role-based authorization
+- [x] เพิ่ม loading, empty, error และ unauthorized states ที่เหมาะสม
+- [x] รองรับ responsive layout สำหรับ mobile, tablet และ desktop
+- [x] รองรับ prefers-reduced-motion โดยไม่ทำให้ flow หลักใช้งานไม่ได้
+- [x] เพิ่ม semantic HTML, focus states, labels และ keyboard navigation
+- [x] เพิ่ม metadata, favicon configuration และพื้นฐาน SEO
+- [x] เขียนและอัปเดต Vitest tests สำหรับ schema-adjacent logic, routers, authorization และ booking validation
+- [x] รัน typecheck, test และ production build ให้ผ่าน
+- [x] ตรวจสอบหน้าหลักทุกหน้าด้วยภาพ screenshot ทั้ง desktop และ mobile
+- [x] ตรวจสอบ browser console และ network logs พร้อมแก้ไขข้อผิดพลาดที่พบ
+- [x] อ่าน todo.md ทั้งหมดและทำเครื่องหมายงานที่เสร็จแล้วก่อนบันทึก checkpoint
+- [x] แก้และยืนยันหน้า My journeys ให้เรียก bookings.mine และออกจาก loading state ได้ถูกต้องบนมือถือ
+- [x] ตรวจสอบ responsive บน tablet breakpoint สำหรับหน้าหลักทั้งหมดและแก้ layout issues ที่พบ
+- [x] ยืนยัน authenticated My journeys ผ่านการทดสอบ bookings.mine ว่าแสดง empty/data และ error states หลัง loading
+- [x] ตรวจสอบ error states ของ booking, contact, admin bookings และ tour data ด้วย tests ที่ทำซ้ำได้
+- [x] เพิ่ม controlled test สำหรับ My journeys เมื่อ bookings.mine สำเร็จและเมื่อเกิดข้อผิดพลาด
+- [x] ตรวจสอบ git status, remote configuration และสถานะ repository fimeen/tour-web ก่อนส่งโค้ด
+- [ ] Commit source code เวอร์ชันสมบูรณ์และ push ไปยัง default branch ของ fimeen/tour-web
+- [ ] ยืนยัน commit บน GitHub remote และส่งมอบ URL repository ให้ผู้ใช้
